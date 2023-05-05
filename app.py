@@ -99,7 +99,7 @@ st.markdown("---")
 fig_sexo = px.bar(df, x=df_selection["Sexo"], y=df_selection["cantidad"], color=df_selection["Movilidad"], barmode="group",
              title="Cantidad de estudiantes entrantes y salientes por género")
 
-st.plotly_chart(fig_sexo)
+st.plotly_chart(fig_sexo, use_container_width=True)
 
 #grafico cantidad por carrera
 
@@ -114,7 +114,7 @@ fig_carrera = px.bar(
     
     )
 
-st.plotly_chart(fig_carrera)
+st.plotly_chart(fig_carrera, use_container_width=True)
 
 #grafico cantidad por país
 
@@ -129,7 +129,7 @@ fig_pais = px.bar(
     
     )
 
-st.plotly_chart(fig_pais)
+st.plotly_chart(fig_pais, use_container_width=True)
 
 #grafico cantidad por Universidad
 
@@ -144,4 +144,4 @@ fig_universidad = px.bar(
     
     )
 
-st.plotly_chart(fig_universidad)
+st.plotly_chart(fig_universidad, use_container_width=True)
