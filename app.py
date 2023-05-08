@@ -11,7 +11,10 @@ df = pd.read_excel (
     skiprows=0,
     usecols='A:O',
     nrows=632,
+
 )
+
+df['year'] = df['year'].astype(str).str.replace('.', '')
 
 # -- Barra lateral --
 
@@ -161,4 +164,19 @@ fig_tipo_de_movilidad = px.bar(
     )
 
 st.plotly_chart(fig_tipo_de_movilidad, use_container_width=True)
+
+# entregar las top 5 universidades de los alumnos entrantes en un peridoo
+
+conteo_universidades_entrantes = alumnos_entrantes.groupby(df_selection["Universidad"])["País"].value_counts()
+
+top_universidades_entrantes = conteo_universidades_entrantes.sort_values(ascending=False).head(5)
+
+conteo_universidades_salientes = alumnos_salientes.groupby(df_selection["Universidad"])["País"].value_counts()
+
+top_universidades_salientes = conteo_universidades_salientes.sort_values(ascending=False).head(5)
+
+st.write('Top 5 universidades de origen extranjeros:')
+st.dataframe(top_universidades_entrantes, use_container_width=True)
+st.write('Top 5 universidades de destino alumnos fiudec:')
+st.dataframe(top_universidades_salientes, use_container_width=True)
 
