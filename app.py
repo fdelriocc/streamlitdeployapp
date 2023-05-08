@@ -145,3 +145,17 @@ fig_universidad = px.bar(
     )
 
 st.plotly_chart(fig_universidad, use_container_width=True)
+#grafico cantidad por Universidad
+
+fig_tipo_de_movilidad = px.bar(
+    
+    df, 
+    y=df_selection["Actividad"], 
+    x=df_selection["cantidad"], 
+    color=df_selection["Movilidad"], 
+    barmode="group",
+    title="Tipo de actividad realizada por los estudiantes",
+        
+    )
+
+st.plotly_chart(fig_tipo_de_movilidad, use_container_width=True)
