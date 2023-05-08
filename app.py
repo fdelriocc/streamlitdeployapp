@@ -141,11 +141,13 @@ fig_universidad = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por Universidad",
-    
+    height=1000
+        
     )
 
 st.plotly_chart(fig_universidad, use_container_width=True)
-#grafico cantidad por Universidad
+
+#grafico tipo de movilidad
 
 fig_tipo_de_movilidad = px.bar(
     
@@ -159,3 +161,4 @@ fig_tipo_de_movilidad = px.bar(
     )
 
 st.plotly_chart(fig_tipo_de_movilidad, use_container_width=True)
+
