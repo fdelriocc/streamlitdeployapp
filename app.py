@@ -99,7 +99,7 @@ st.markdown("---")
 
 #grafico cantidad por sexo
 
-fig_sexo = px.bar(
+fig_sexo = px.histogram(
     
     df, 
     x=df_selection["Sexo"], 
