@@ -104,10 +104,9 @@ fig_sexo = px.bar(
     df, 
     x=df_selection["Sexo"], 
     y=df_selection["cantidad"], 
-    color=df_selection["Movilidad"], 
-    barmode="group",
+    color=df_selection["Movilidad"],
     title="Cantidad de estudiantes entrantes y salientes por género"
-    text_auto= True
+    
     
     )
 
