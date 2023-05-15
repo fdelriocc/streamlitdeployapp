@@ -107,8 +107,10 @@ fig_sexo = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por género"
+    text_auto= True
     
     )
+
 
 st.plotly_chart(fig_sexo, use_container_width=True)
 
