@@ -99,8 +99,16 @@ st.markdown("---")
 
 #grafico cantidad por sexo
 
-fig_sexo = px.bar(df, x=df_selection["Sexo"], y=df_selection["cantidad"], color=df_selection["Movilidad"], barmode="group",
-             title="Cantidad de estudiantes entrantes y salientes por género")
+fig_sexo = px.bar(
+    
+    df, 
+    x=df_selection["Sexo"], 
+    y=df_selection["cantidad"], 
+    color=df_selection["Movilidad"], 
+    barmode="group",
+    title="Cantidad de estudiantes entrantes y salientes por género"
+    
+    )
 
 st.plotly_chart(fig_sexo, use_container_width=True)
 
