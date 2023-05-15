@@ -116,7 +116,7 @@ st.plotly_chart(fig_sexo, use_container_width=True)
 
 #grafico cantidad por carrera
 
-fig_carrera = px.bar(
+fig_carrera = px.histogram(
     
     df,
     y=df_selection["Carrera"], 
@@ -124,7 +124,7 @@ fig_carrera = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por carrera",
-    labels={'x':'Cantidad', 'y':'Carrera'},
+    labels={'x':'Cantidad', 'y':'Carrera o postgrado'},
 
     )
 
@@ -133,7 +133,7 @@ st.plotly_chart(fig_carrera, use_container_width=True)
 #grafico cantidad por año
 
 
-fig_año = px.bar(
+fig_año = px.histogram(
     
     df,
     y=df_selection["year"], 
@@ -142,6 +142,7 @@ fig_año = px.bar(
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por año",
     height=700
+    labels={'x':'Cantidad', 'y':'Año'},
     
     )
 
@@ -149,7 +150,7 @@ st.plotly_chart(fig_año, use_container_width=True)
 
 #grafico cantidad por país
 
-fig_pais = px.bar(
+fig_pais = px.histogram(
     
     df, 
     y=df_selection["País"], 
@@ -157,6 +158,7 @@ fig_pais = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por país",
+    labels={'x':'Cantidad', 'y':'País'},
     
     )
 
@@ -164,7 +166,7 @@ st.plotly_chart(fig_pais, use_container_width=True)
 
 #grafico cantidad por Universidad
 
-fig_universidad = px.bar(
+fig_universidad = px.histogram(
     
     df, 
     y=df_selection["Universidad"], 
@@ -172,7 +174,8 @@ fig_universidad = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por Universidad",
-    height=1000
+    height=1000,
+    labels={'x':'Cantidad', 'y':'Universidad'},
         
     )
 
@@ -180,7 +183,7 @@ st.plotly_chart(fig_universidad, use_container_width=True)
 
 #grafico tipo de movilidad
 
-fig_tipo_de_movilidad = px.bar(
+fig_tipo_de_movilidad = px.histogram(
     
     df, 
     y=df_selection["Actividad"], 
@@ -188,6 +191,7 @@ fig_tipo_de_movilidad = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Tipo de actividad realizada por los estudiantes",
+    labels={'x':'Cantidad', 'y':'Tipo de Movilidad'},
         
     )
 
