@@ -141,7 +141,7 @@ fig_año = px.histogram(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por año",
-    height=700
+    height=700,
     labels={'x':'Cantidad', 'y':'Año'},
     
     )
