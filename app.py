@@ -119,6 +119,21 @@ fig_carrera = px.bar(
 
 st.plotly_chart(fig_carrera, use_container_width=True)
 
+#grafico cantidad por año
+
+fig_año = px.bar(
+    
+    df,
+    y=df_selection["year"], 
+    x=df_selection["cantidad"], 
+    color=df_selection["Movilidad"], 
+    barmode="group",
+    title="Cantidad de estudiantes entrantes y salientes por año",
+    
+    )
+
+st.plotly_chart(fig_año, use_container_width=True)
+
 #grafico cantidad por país
 
 fig_pais = px.bar(
