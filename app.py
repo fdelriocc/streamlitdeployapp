@@ -128,8 +128,8 @@ fig_año = px.bar(
     x=df_selection["year"], 
     y=df_selection["cantidad"], 
     color=df_selection["Movilidad"], 
+    barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por año",
-    text= 'cantidad',
     
     )
 
