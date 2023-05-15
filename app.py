@@ -121,7 +121,7 @@ st.plotly_chart(fig_carrera, use_container_width=True)
 
 #grafico cantidad por año
 
-text_movilidad = len(Movilidad_Total)
+text_movilidad = Movilidad_Total
 
 fig_año = px.bar(
     
