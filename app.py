@@ -140,7 +140,7 @@ fig_año = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por año",
-    height=1000
+    height=2000
     
     )
 
