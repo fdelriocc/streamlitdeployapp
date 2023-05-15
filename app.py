@@ -102,12 +102,6 @@ st.markdown("---")
 fig_sexo = px.bar(df, x=df_selection["Sexo"], y=df_selection["cantidad"], color=df_selection["Movilidad"], barmode="group",
              title="Cantidad de estudiantes entrantes y salientes por género")
 
-if df_selection["Sexo"] < 1:
-
-    st.write('Selecciona al menos una opción en todos los campos')
-
-else:
-
 st.plotly_chart(fig_sexo, use_container_width=True)
 
 #grafico cantidad por carrera
