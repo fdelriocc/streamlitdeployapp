@@ -108,7 +108,6 @@ fig_sexo = px.histogram(
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por género",
     labels={'x':'Género', 'y':'Cantidad'},
-    text= 'cantidad'
     
     )
 
@@ -125,7 +124,8 @@ fig_carrera = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por carrera",
-    
+    labels={'x':'Cantidad', 'y':'Carrera'},
+
     )
 
 st.plotly_chart(fig_carrera, use_container_width=True)
