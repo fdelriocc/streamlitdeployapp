@@ -121,7 +121,6 @@ st.plotly_chart(fig_carrera, use_container_width=True)
 
 #grafico cantidad por año
 
-text_movilidad = Movilidad_Total
 
 fig_año = px.bar(
     
@@ -131,7 +130,7 @@ fig_año = px.bar(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por año",
-    text= "tex_movilidad"
+    text= 'cantidad'
     
     )
 
