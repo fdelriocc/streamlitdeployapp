@@ -107,8 +107,7 @@ fig_sexo = px.histogram(
     color=df_selection["Movilidad"], 
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por género",
-    labels={'x':'Género', 'y':'Cantidad'}
-    
+
     )
 
 
