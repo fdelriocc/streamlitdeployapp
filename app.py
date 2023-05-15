@@ -5,12 +5,12 @@ import streamlit as st
 st.set_page_config(page_title="Alianzas", page_icon=":bar_chart:", layout="wide")
 
 df = pd.read_excel (
-    io='bd_13_22.xlsx', 
+    io='bd_23.xlsx', 
     engine='openpyxl', 
     sheet_name='alumnos',
     skiprows=0,
     usecols='A:O',
-    nrows=632,
+    nrows=663,
 
 )
 
