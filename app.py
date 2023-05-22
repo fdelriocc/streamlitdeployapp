@@ -212,3 +212,8 @@ st.dataframe(top_universidades_entrantes, use_container_width=True)
 st.write('Top 5 universidades de destino alumnos fiudec:')
 st.dataframe(top_universidades_salientes, use_container_width=True)
 
+#Visualización de estudiantes en el periodo seleccionado 
+
+st.dataframe(df_selection)
+
+
