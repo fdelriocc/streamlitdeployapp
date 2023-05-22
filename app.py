@@ -214,6 +214,7 @@ st.dataframe(top_universidades_salientes, use_container_width=True)
 
 #Visualización de estudiantes en el periodo seleccionado 
 
+st.write('Datos de los Alumnos en el periodo Seleccionado:')
 st.dataframe(df_selection)
 
 
