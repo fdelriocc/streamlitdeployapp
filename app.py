@@ -126,6 +126,7 @@ fig_carrera = px.histogram(
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por carrera",
     labels={'x':'Cantidad', 'y':'Carrera o postgrado'},
+    text_auto = True
 
     )
 
@@ -144,6 +145,7 @@ fig_año = px.histogram(
     title="Cantidad de estudiantes entrantes y salientes por año",
     height=700,
     labels={'x':'Cantidad', 'y':'Año'},
+    text_auto = True
     
     )
 
@@ -160,6 +162,7 @@ fig_pais = px.histogram(
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por país",
     labels={'x':'Cantidad', 'y':'País'},
+    text_auto = True
     
     )
 
@@ -177,6 +180,7 @@ fig_universidad = px.histogram(
     title="Cantidad de estudiantes entrantes y salientes por Universidad",
     height=1000,
     labels={'x':'Cantidad', 'y':'Universidad'},
+    text_auto = True
         
     )
 
@@ -193,6 +197,7 @@ fig_tipo_de_movilidad = px.histogram(
     barmode="group",
     title="Tipo de actividad realizada por los estudiantes",
     labels={'x':'Cantidad', 'y':'Tipo de Movilidad'},
+    text_auto = True
         
     )
 
