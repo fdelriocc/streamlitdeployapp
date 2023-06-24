@@ -108,6 +108,7 @@ fig_sexo = px.histogram(
     barmode="group",
     title="Cantidad de estudiantes entrantes y salientes por género",
     labels={'x':'Género', 'y':'Cantidad'},
+    text_auto = True
     
     )
 
