@@ -10,7 +10,7 @@ df = pd.read_excel (
     sheet_name='alumnos',
     skiprows=0,
     usecols='A:O',
-    nrows=663,
+    nrows=712,
 
 )
 
