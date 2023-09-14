@@ -55,10 +55,16 @@ default=df["Movilidad"].unique()
 
 )
 
+grado = st.sidebar.multiselect(
+"Seleciona pregrado o postgrado: ", 
+options=df["Grado"].unique(),
+default=df["Grado"].unique()
+
+)
 
 df_selection = df.query(
 
-    "País == @país & Sexo == @sexo & year == @año & Movilidad == @movilidad & Carrera == @carrera" 
+    "País == @país & Sexo == @sexo & year == @año & Movilidad == @movilidad & Carrera == @carrera & Grado == @grado" 
 )
 
 
