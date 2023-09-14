@@ -92,13 +92,13 @@ with uno:
     st.subheader("Estudiantes con movilidad internacional fiudec:")
     st.subheader(Movilidad_Total)
 with dos:
-    st.subheader("foreign students:")
+    st.subheader("Alumnos Extranjeros:")
     st.subheader(foreign_students)
 with tres:
-    st.subheader("International internships:")
+    st.subheader("Prácticas internacionales:")
     st.subheader(international_internships)
 with cuatro:
-    st.subheader("Student’s abroad:")
+    st.subheader("Estudiantes fiudec en intercambio:")
     st.subheader(students_abroad)
 
 st.markdown("---")
